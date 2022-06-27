@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -> 표준 -> 플러그인 -> 개인css순서-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 플러그인 -> 개인 -> 제이쿼리core -> 제이쿼리플러그인 -> 개인js-->
+    <script src="/js/jquery-2.2.4.min.js"></script>
+    <script src="/js/base.js"></script>
+</head>
+<body>
+    <!-- 반드시 .container 안에 넣는다 -->
+    <!-- 컨테이너형 .container>header#hd+section#content+footer#ft -->
+    <!-- a,b형 동일  h1>a>img^^ul#gnb.d-flex>li.rel*4>a[href='#']{대메뉴}+ul.abs>li*5>a[href='#']{소메뉴} -->
+    <div class="container">
+        <header id="hd" class="d-flex justify-content-between align-items-center h100">
+            <h1><a href=""><img src="img/logo.svg" alt=""></a></h1>
+            <ul id="gnb" class="d-flex">
+                <li class="rel">
+                    <a href="#" class="font26">대메뉴</a>
+                    <ul class="abs">
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <a href="#" class="font26">대메뉴</a>
+                    <ul class="abs">
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <a href="#" class="font26">대메뉴</a>
+                    <ul class="abs">
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <a href="#" class="font26">대메뉴</a>
+                    <ul class="abs">
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                        <li><a href="#">소메뉴</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section id="content"></section>
+        <footer id="ft"></footer>
+    </div>
+    <!-- 화면형 header#hd>.container^section#content.container+footer#ft>.container -->
+    <!-- <header id="hd">
+        <div class="container"></div>
+    </header>
+    <section id="content" class="container"></section>
+    <footer id="ft">
+        <div class="container"></div>
+    </footer> -->
+    <!-- C형 .container1000>header#hd200+section.content800 -->
+    <!-- h1>a>img^^ul#gnb>li*4>a[href='#']{대메뉴}+ul.>li*5>a[href='#']{소메뉴} -->
+    <!-- h1>a>img^^ul#gnb>li.rel*4>a[href='#']{대메뉴}+ul.abs>li*5>a[href='#']{소메뉴} -->
+    <!-- <div class="container1000">
+        <header id="hd200">
+            h1>a>img^^ul#gnb>li*4>a[href='#']{대메뉴}+ul.>li*5>a[href='#']{소메뉴}
+        </header>
+        <section class="content800"></section>
+    </div> -->
+</body>
+</html>
